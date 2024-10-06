@@ -1,0 +1,118 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8d7da; /* Latar belakang pastel merah muda */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #dc3545; /* Merah */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+}
+
+header:hover {
+    background-color: #c82333; /* Warna lebih gelap saat hover */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffc107; /* Kuning saat hover */
+    transform: scale(1.1);
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+main:hover {
+    transform: translateY(-5px); /* Efek sedikit mengangkat saat hover */
+}
+
+h2 {
+    border-bottom: 2px solid #dc3545; /* Merah */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #2d3436; /* Warna gelap */
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    width: 150px; /* Atur lebar logo */
+    transition: transform 0.3s;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Efek membesar saat hover */
+}
+
+footer {
+    background-color: #6c757d; /* Abu-abu gelap */
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+footer:hover {
+    background-color: #5a6268; /* Warna lebih gelap saat hover */
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Media query untuk responsif */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    main {
+        margin: 10px;
+        padding: 15px;
+    }
+}
